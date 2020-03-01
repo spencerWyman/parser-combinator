@@ -13,7 +13,30 @@ What should this simple language have?
 - built in operators: + - * / ^ ( ) for arithmetic and strings
 */
 
+
 console.log(process.argv);
 code = fs.readFileSync(path.join(__dirname, process.argv[2]));
-
 console.log('code ' + code);
+
+const digits = new Set();
+for (let i = 0; i < 10; i++) {
+  digits.add(i.toString());
+}
+
+const operators = new Set();
+operators.add('+');
+operators.add('-');
+operators.add('*');
+operators.add('/');
+operators.add('^');
+
+
+
+const memory = {
+  digits,
+  operators,
+};
+
+function parse(code) {
+
+}
