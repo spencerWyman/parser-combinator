@@ -1,0 +1,7 @@
+var greeting = ('hello world');
+
+function display(input) {
+  log(input);
+}
+
+display(greeting);
