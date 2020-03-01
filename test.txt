@@ -1,7 +1,20 @@
-var greeting = ('hello world');
-
 function display(input) {
   log(input);
-}
+};
+
+var greeting = ('hello world');
+var num1 = 10;
+var num2 = 13;
+var sum = num1 + num2;
 
 display(greeting);
+display(num1);
+display(num2);
+display(sum);
+
+var object = {
+  hello: "solar system",
+  goodbye: "moon",
+};
+
+display("hello" + object.hello);
